@@ -1,9 +1,9 @@
 import pytest
 from app import App
-from app.commands.goodbye import GoodbyeCommand
-from app.commands.greet import GreetCommand
-from app.commands.cool import coolCommand
-from app.commands.thanks import thanksCommand
+from app.plugins.goodbye import GoodbyeCommand
+from app.plugins.greet import GreetCommand
+from app.plugins.cool import coolCommand
+from app.plugins.thanks import thanksCommand
 
 def test_greet_command(capfd):
     command = GreetCommand()

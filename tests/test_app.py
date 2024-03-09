@@ -1,4 +1,5 @@
 import pytest
+<<<<<<< HEAD
 
 from app import App
 
@@ -11,6 +12,10 @@ def test_app_get_environment_variable():
 
 
 
+=======
+from app import App
+
+>>>>>>> logging/logging
 def test_app_start_exit_command(capfd, monkeypatch):
     """Test that the REPL exits correctly on 'exit' command."""
     # Simulate user entering 'exit'
@@ -20,6 +25,13 @@ def test_app_start_exit_command(capfd, monkeypatch):
         app.start()
     assert e.type == SystemExit
 
+<<<<<<< HEAD
+=======
+
+
+import pytest
+
+>>>>>>> logging/logging
 def test_app_start_unknown_command(capfd, monkeypatch):
     """Test how the REPL handles an unknown command before exiting."""
     # Simulate user entering an unknown command followed by 'exit'

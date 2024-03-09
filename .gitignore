@@ -2,5 +2,8 @@
 .coverage
 .pytest_cache
 *__pycache__
+<<<<<<< HEAD
 .env
 logs
+=======
+>>>>>>> logging/logging

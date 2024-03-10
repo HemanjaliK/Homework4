@@ -1,27 +1,38 @@
-<<<<<<< HEAD
-Preparing for Production: DevOps, Cloud Computing, Environment Variables, Logging, and Continuous Integration
-=======
-# Project Starter
+Gettring Ready for Production: Devops, Cloud Computing, Environment Variables, Logging, and Continuous Integration
+Introduction
+In this unit, we are adding three new features to our program that will start to prepare your program for use in a production environment.
 
-## Setup Instructions
-1. Clone the repo
-2. CD into the project folder
-3. Create the virtual environment 
-4. Activate the virtual environment (VE)
-5. Install Requirements
+You will add the following features:
 
-## Test Commands
-1. pytest run all tests
-2. pytest tests/test_main.py <- Run just the tests in this file
-3. pytest --pylint --cov <- Run Pylint and Coverage (Can be run independently)
+GitHub Actions to run your tests on GitHub automaticly, which is your first steps toward having an understanding of Deveops. Make sure that when you push to master, it runs the tests and try to find where it outputs the test results on GitHub.
 
-## Current Libraries Installed
-1. [Pytest - Testing Framework](https://docs.pytest.org/en/8.0.x/)
-2. [Faker - Fake Data Creation](https://faker.readthedocs.io/en/master/)
-3. [Pytest Coverage](https://pytest-cov.readthedocs.io/en/latest/readme.html)
-4. [Pytest Pylint](https://pylint.readthedocs.io/en/stable/development_guide/contributor_guide/tests/launching_test.html)
-## Adding Library
-1.  Make sure you are in the correct VE, if not sure run "deactivate"
-2.  Activate the VE
-3.  Run pip freeze > requirements.txt
->>>>>>> logging/logging
+Environmnent variables = Environment variables are also important because they are how you provide input to your program. You use them to store passwords, api keys, etc... It's important to understand how to use them because they are your goto solution for providing input to your program, when you don't want to, or can't ask a user to provide the information. You need to use Environment variables for API keys or other secure information because if you let an API key appear on GitHub, it will be banned within minutes. You must create a .env file and put your key there and add the .env file to the .gitignore, so that when you put secret information in your local development environment that it isn't accidently posted to GitHub. Right now we don't have anything secret, so you can just add a key / value pair to identify your local development environment. Check out my sample .env file here
+
+Logging - Logging is how your program outputs information to external systems and is important for tracking application usage, security, and development, since you can use logging to output data like a print statement; however, as we start working with data in the following units, you will need a more effective way of viewing data in variables.
+
+Project Enhancements from Assignment 5
+Incorporate the functionalities discussed in the lecture videos to your previous assignment. In your program a
+
+Required Viewing
+Instructor Video Unit Overview - here - Note all the code is on the main branch I ended up making a new repo after I recorded the video.
+
+Focus on Logging - here
+
+Focus on Environment Variables - here
+
+Introduction to DevOps - here
+
+Submission Requirements
+Add a GitHub action to your project by copying my .github folder and the python-app.yml file that is in there and then click on the actions tab on your repository to see that when you push to the main branch that all your tests are run.
+
+Add the .env file and refer to the
+
+Grading Rubric (Total: 100 Points)
+Testing (50 Points):
+
+Comprehensive test coverage near 100% average coverage: 50 Points
+Functionality (50 Points):
+
+Implementation of command pattern and REPL: 10 Points
+Interactive calculator commands (add, subtract, multiply, divide): 20 Points
+Successful plugin architecture integration for dynamic command loading: 20 Ensure that the functionality aligns with the requirements and demonstrates the effective use of the command pattern and plugin architecture as outlined in the instructor videos.

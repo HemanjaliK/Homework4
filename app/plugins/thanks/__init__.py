@@ -1,6 +1,8 @@
+import logging
 from app.commands import Command
 
 
-class thanksCommand(Command):
+class ThanksCommand(Command):
     def execute(self):
-        print("Thank You!")
+        logging.info("Thank you!")
+        print("Thank you!")
